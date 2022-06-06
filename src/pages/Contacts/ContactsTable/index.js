@@ -7,7 +7,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { CircularProgress } from "@material-ui/core/CircularProgress";
 import { makeStyles, Typography } from '@material-ui/core';
 import { Avatar } from '@mui/material';
 import { CopyToClipBoardText } from "../../../components/CopyToClipBoardText";
@@ -22,7 +21,7 @@ const useStyles = makeStyles({
 export const ContactsTable = ({ data }) => {
     const classes = useStyles();
     return (
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} data-testid="contacts-table-container">
             <Table className={classes.table} aria-label="contacts table">
                 <TableHead>
                     <TableRow>
@@ -37,11 +36,11 @@ export const ContactsTable = ({ data }) => {
                 </TableHead>
                 <TableBody>
                     {data.map((contact) => (
-                        <TableRow key={contact.login.uuid}>
+                        <TableRow key={contact.login.uuid} data-testid="contacts-table-row">
                             <TableCell>
                                 <Avatar src={contact.picture.thumbnail} alt="" />
                             </TableCell>
-                            <TableCell>{contact.name.title} {contact.name.first} {contact.name.last}</TableCell>
+                            <TableCell data-testid="contacts-table-cell-fullname">{contact.name.title} {contact.name.first} {contact.name.last}</TableCell>
                             <TableCell>
                                 <Typography>{format(parseISO(contact.dob.date), 'MM/dd/yyyy')}</Typography>
                                 <Typography>{contact.dob.age} years</Typography>
@@ -55,7 +54,7 @@ export const ContactsTable = ({ data }) => {
                             <TableCell>
                                 <Typography>{contact.location.country}</Typography>
                                 <Typography>{contact.location.city}, {contact.location.street.name} {contact.location.street.number}</Typography>
-                                </TableCell>
+                            </TableCell>
                             <TableCell>{NATIONALITIES_HUMAN_NAME[contact.nat]}</TableCell>
                         </TableRow>
                     ))}
