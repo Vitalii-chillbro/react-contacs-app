@@ -89,7 +89,7 @@ export const Contacts = () => {
                         />
                     </Box>
                 </Grid>
-                <Grid item xs={12} className={classes.filtersContainer}>
+                <Grid item xs={12} className={classes.filtersContainer} style={{marginBottom: "24px"}}>
                     <ContactsFilters
                         filters={filters}
                         updateFilter={updateFilter}
