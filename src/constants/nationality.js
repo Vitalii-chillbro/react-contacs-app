@@ -16,6 +16,10 @@ export const NATIONALITIES = {
     "NZ": "NZ",
     "TR": "TR",
     "US": "US",
+    "UA": "UA",
+    "MX": "MX",
+    "IN": "IN",
+    "RS": "RS"
 };
 
 export const NATIONALITIES_HUMAN_NAME = {
@@ -36,4 +40,8 @@ export const NATIONALITIES_HUMAN_NAME = {
     [NATIONALITIES.NZ]: "New Zealend",
     [NATIONALITIES.TR]: "Turkish",
     [NATIONALITIES.US]: "American",
+    [NATIONALITIES.UA]: "Ukrainian",
+    [NATIONALITIES.MX]: "Mexican",
+    [NATIONALITIES.IN]: "Indian",
+    [NATIONALITIES.RS]: "Serbian"
 }
