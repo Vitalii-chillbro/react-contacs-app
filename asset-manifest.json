@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-contacs-app/static/css/main.93a0497a.css",
+    "main.js": "/react-contacs-app/static/js/main.187db903.js",
+    "static/js/787.c45cc61a.chunk.js": "/react-contacs-app/static/js/787.c45cc61a.chunk.js",
+    "index.html": "/react-contacs-app/index.html",
+    "main.93a0497a.css.map": "/react-contacs-app/static/css/main.93a0497a.css.map",
+    "main.187db903.js.map": "/react-contacs-app/static/js/main.187db903.js.map",
+    "787.c45cc61a.chunk.js.map": "/react-contacs-app/static/js/787.c45cc61a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93a0497a.css",
+    "static/js/main.187db903.js"
+  ]
+}
